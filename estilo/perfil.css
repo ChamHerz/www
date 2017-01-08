@@ -1,0 +1,218 @@
+/* Perfil Usuario*/
+#Contenido-Perfil{ overflow:hidden;
+                   margin: 6px;}
+#Perfil-ColIzq {float:left;
+		        width:710px;}
+#Perfil-ColDer {background-color: blue;
+		        float: right;
+		        width:260px;}
+#Pefil-Top {overflow: hidden;}
+#Perfil-Top-ColIzq{float:left;
+				   font-family: Tahoma,sans-serif;
+				   font-weight: bold;
+				   font-size: 10px;
+				   width:126px;}
+#Perfil-Top-ColIzq img{width: 120px;
+					   min-height: 120px;
+					   max-height: 300px;
+					   border: 1px solid #DDD;
+					   padding: 2px;}
+#Perfil-Top-ColDer{float: right;
+				   width: 580px;}
+#Perfil-Top-ColDer-Top {height: 64px;
+						font-family: Tahoma,sans-serif;
+						font-weight: bold;
+						color: #1B5872;}
+#PerfilNombre{float:left;}
+#Span-Nick { margin-bottom: 12px; }
+.Span-Faction { background-color: #E5E4DA;
+ 			    text-align: center;
+				font-size: 10px;
+			    font-weight: bold;
+    			margin: 5px 0px 4px 1px;
+    			padding: 3px 10px 3px 10px;
+    			border-radius: 3px;
+    			color: #FFF;
+    			text-shadow: 1px 1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, -1px -1px 1px #000;
+    			border: 1px solid #B7B497;}
+
+/*Rengron de atributos*/
+.Contenedor-AtributosPost {overflow: hidden;}
+.Div-Atributos {float: left;
+				height: 300px;
+				width:271px;}
+.Div-ListaPost {float: right;
+				width:430px;}
+/*Sistema de Solapas*/
+.tabs {
+    position: relative;
+    margin: 5px auto;
+    width: 270px;
+}
+
+.tabs input {
+    position: absolute;
+    z-index: 1000;
+    width: 91px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+.tabs input#tab-2{
+    left: 91px;
+}
+.tabs input#tab-3{
+    left: 182px;
+}
+.tabs input#tab-4{
+    left: 273px;
+}
+.tabs label {
+    background: #5ba4a4;
+    background: -moz-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5ba4a4), color-stop(100%,#4e8c8a));
+    background: -webkit-linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
+    background: -o-linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
+    background: -ms-linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
+    background: linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+    position: relative;
+    padding: 0 5px;
+    float: left;
+    display: block;
+    width: 80px;
+    color: #385c5b;
+    letter-spacing: 1px;
+    font-weight: bold;
+	font-family: Tahoma,sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+    border-radius: 3px 3px 0 0;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tabs label:after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+
+.tabs input:hover + label {
+    background: #5ba4a4;
+}
+
+.tabs label:first-of-type {
+    z-index: 4;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tab-label-2 {
+    z-index: 3;
+}
+
+.tab-label-3 {
+    z-index: 2;
+}
+.tab-label-4 {
+    z-index: 1;
+}
+
+.tabs input:checked + label {
+    background: #fff;
+    z-index: 6;
+}
+
+.clear-shadow {
+    clear: both;
+}
+
+.content {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    z-index: 5;
+    box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
+    border-radius: 0 3px 3px 3px;
+}
+
+.content div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+    z-index: 1;
+    opacity: 0;
+
+    -webkit-transition: opacity linear 0.1s;
+    -moz-transition: opacity linear 0.1s;
+    -o-transition: opacity linear 0.1s;
+    -ms-transition: opacity linear 0.1s;
+    transition: opacity linear 0.1s;
+}
+
+.tabs input.tab-selector-1:checked ~ .content .content-1,
+.tabs input.tab-selector-2:checked ~ .content .content-2,
+.tabs input.tab-selector-3:checked ~ .content .content-3 {
+    z-index: 100;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+
+    -webkit-transition: opacity ease-out 0.2s 0.1s;
+    -moz-transition: opacity ease-out 0.2s 0.1s;
+    -o-transition: opacity ease-out 0.2s 0.1s;
+    -ms-transition: opacity ease-out 0.2s 0.1s;
+    transition: opacity ease-out 0.2s 0.1s;
+}
+#tabs_post { width:427px;}
+.TopPostsRenglon, .Span-Contenido, .Cont1-Renglon {display: block;
+				       			  				   font-weight: bold;
+				  				  				   font-size: 13px;
+				  				  				   color: #385c5b;
+				  				  				   font-family: Tahoma,sans-serif;}
+#Span-Contenido { font-weight:normal;}
+.CeldaTitulo {width: 318px;}
+.CeldaFecha {font-size: 10px;
+			 text-align:right; }
+#Iduser { visibility:hidden;
+		  float: left;
+		  height: 0px;}
+.CeldaTitulo a{ color: #385c5b;
+				text-decoration: none;}
+.CeldaTitulo a:hover, #PerfilNavegador a:hover { text-decoration: underline;
+												 cursor: pointer;}
+#PerfilNavegador {text-align: center;
+				  display:block;}
+#TablaPost{height: 190px;
+		   display:block;}
+/*Solapa de Atributos*/		  
+.Cont1-Renglon{display:block;
+			   margin: 5px;}
+.TextAtributo { position:absolute;
+				width: 200px;
+				margin-left: 4px;
+			    height: -15px;}
+.IconAtributo {background-image:url(../imagenes/iconos.png);
+			   display:inline-block;
+			   width: 16px;
+			   height: 16px;}
+#ImgAtributo { background-position: 0px 32px; }
+#ImgPost { background-position: 0px 96px;}
+#ImgView { background-position: 0px 112px;}
+#ImgComent { background-position: 0px 80px;}
+#ImgPrecedencia {background-position: 0px 48px;}
+#ImgAntiguedad {background-position: 0px 64px; }
+#ImgAvg {background-position: 0px 16px; }
+/*Fin Solapa de Atributoss*/

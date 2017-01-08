@@ -1,0 +1,4 @@
+.colorCambia{ transition: background-color 2s cubic-bezier(0.08,0.83,0.44,0.93);
+			  background-image: -moz-linear-gradient(top , rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3) 50%,rgba(0, 0, 0, 0.5));
+			  background-color:green;}
+.cambiarFondo{ background-color:#83F983;}
